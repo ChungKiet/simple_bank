@@ -41,7 +41,7 @@ jobs:
         run: go build -v ./...
 
       - name: Run migrations
-        run: make migrations
+        run: make migrateup
 
       - name: Test
         run: make test
