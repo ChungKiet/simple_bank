@@ -37,9 +37,6 @@ jobs:
       - name: Check out code into Go module directory
         uses: actions/checkout@v2
 
-      - name: Build
-        run: go build -v ./...
-
       - name: Run migrations
         run: make migrateup
 
